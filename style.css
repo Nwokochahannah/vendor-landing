@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html,
-body {
-  position: relative;
-  height: 100%;
-} */
+html {
+  font-family: 'Poppins', sans-serif !important;
+}
 
 body {
   margin: 0;
@@ -74,6 +72,10 @@ body {
   color: rgba(50, 50, 50, 1);
 }
 
+.text-test-name {
+  color: rgba(94, 94, 94, 1);
+}
+
 .text-job {
   color: rgba(163, 163, 163, 1);
 }
@@ -88,6 +90,10 @@ body {
 
 .text-icons {
   color: rgba(16, 18, 55, 1);
+}
+
+.text-stars {
+  color: rgba(255, 218, 22, 1);
 }
 
 
@@ -175,7 +181,7 @@ body {
 }
 
 .swiper-slide {
-  text-align: center;
+  text-align: left !important;
   font-size: 18px;
   background: #fff;
 
