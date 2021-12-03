@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vendor Crest</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./output.css" />
     <link
       rel="stylesheet"
       href="node_modules/@fortawesome/fontawesome-free/css/all.css"
@@ -18,138 +19,265 @@
 
   <body>
     <header>
-      <div>
-        <div>Logo</div>
-        <div>
-          <div>
-            <i class="fab fa-facebook-f"></i>
+      <div id="" class="md:w-full md:sticky shadow-lg">
+        <div class="flex justify-between h-14 items-center">
+          <div class="ml-5 px-4">Logo</div>
+          <div id="header-toggle" class="text-black bg-white md:hidden mr-5">
+            <i class="fas fa-bars mt-1"></i>
           </div>
-          <div>
-            <i class="fab fa-instagram"></i>
-          </div>
-          <div>
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div>
-            <i class="fab fa-linkedin-in"></i>
+          <div id="nav-bar" class="hidden md:flex flex-row-reverse">
+            <div class="bg-white flex flex-row-reverse w-3/5 md:w-auto">
+              <div
+                class="
+                  md:hidden
+                  absolute
+                  mt-4
+                  md:mt-0
+                  py-2
+                  flex
+                  items-center
+                  px-3
+                  rounded-full
+                  icon-shadow
+                "
+              >
+                <i id="close-toggle" class="fas fa-times"></i>
+              </div>
+              <div
+                class="
+                  md:flex
+                  w-full
+                  md:space-x-6 md:space-y-0
+                  space-x-0 space-y-6
+                  justify-center
+                "
+              >
+                <div
+                  class="
+                    md:flex
+                    items-center
+                    md:space-x-4 md:space-y-0
+                    space-x-0 space-y-4
+                  "
+                >
+                  <div
+                    class="
+                      py-2
+                      px-3
+                      mt-4
+                      md:mt-0
+                      w-3/4
+                      md:w-auto
+                      flex
+                      items-center
+                      rounded-full
+                      icon-shadow
+                    "
+                  >
+                    <i class="fab fa-facebook-f icon-font"></i>
+                  </div>
+                  <div
+                    class="py-2 flex items-center px-3 rounded-full icon-shadow"
+                  >
+                    <i class="fab fa-instagram icon-font"></i>
+                  </div>
+                  <div
+                    class="py-2 flex items-center px-3 rounded-full icon-shadow"
+                  >
+                    <i class="fab fa-twitter icon-font"></i>
+                  </div>
+                  <div
+                    class="py-2 flex items-center px-3 rounded-full icon-shadow"
+                  >
+                    <i class="fab fa-linkedin-in icon-font"></i>
+                  </div>
+                </div>
+                <div class="px-8 h-14 flex items-center text-xs contact-color">
+                  <button class="font-bold">Contact Us</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <button>Contact Us</button>
       </div>
     </header>
-    <main>
-      <!-- Banner section -->
-      <section>
-        <div>
-          <div>
-            We deliver Superb Creative Output to make great things happen.
-          </div>
-          <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever
-          </div>
-          <div>
-            <button>Let’s get started</button>
-          </div>
-        </div>
-        <div>
-          <img src="./img/meeting-deadlines-colored.png" alt="" />
-        </div>
 
-        <!-- Clients -->
-        <div>
-          <div>
-            <div>Trusted Clients</div>
-            <div>Lorem Ipsum is simply dummy text dummy text</div>
+    <main class="flex flex-col space-y-16">
+      <!-- Banner section -->
+      <section class="mt-14 md:mt-24 border-b border-gray-300">
+        <div class="mx-8 md:mx-16">
+          <div
+            class="
+              grid
+              md:grid-cols-2 md:grid-rows-none
+              grid-cols-none grid-flow-row-dense
+              gap-4
+              md:gap-4
+            "
+          >
+            <div class="md:col-span-1 row-span-1">
+              <div class="font-heading text-primary font-bold">
+                We deliver
+                <span class="text-tertiary">Superb Creative</span> Output to
+                make great things happen.
+              </div>
+              <div class="text-head-desc font-secondary my-7">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever
+              </div>
+              <div class="text-white font-primary">
+                <button class="bg-started px-7 py-2 rounded-md">
+                  Let’s get started
+                </button>
+              </div>
+            </div>
+            <div class="md:col-span-1">
+              <img src="./img/meeting-deadlines-colored.png" alt="" />
+            </div>
           </div>
-          <div>
-            <div>
-              <img src="./img/clientlogo-8-3.png" alt="" />
+
+          <!-- Clients -->
+          <div class="mt-8 md:mt-24">
+            <div class="flex justify-center items-center">
+              <div
+                class="
+                  flex flex-col
+                  justify-center
+                  items-center
+                  md:w-3/4
+                  lg:w-2/5
+                "
+              >
+                <div class="text-trusted font-tertiary">Trusted Clients</div>
+                <div class="font-accent text-primary my-4 font-semibold">
+                  Lorem Ipsum is simply dummy text dummy text
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="./img/Kudos-Client-Logo-3.png" alt="" />
-            </div>
-            <div>
-              <img src="./img/Inmarc-client-logos-Recovered-32.png" alt="" />
-            </div>
-            <div>
-              <img src="./img/biotechne+logo.png" alt="" />
-            </div>
-            <div>
-              <img src="./img/biotechne+logo.png" alt="" />
+            <div class="grid grid-cols-3 md:flex md:justify-between my-3">
+              <div>
+                <img src="./img/clientlogo-8-3.png" alt="" />
+              </div>
+              <div>
+                <img src="./img/Kudos-Client-Logo-3.png" alt="" />
+              </div>
+              <div>
+                <img src="./img/Inmarc-client-logos-Recovered-32.png" alt="" />
+              </div>
+              <div>
+                <img src="./img/biotechne+logo.png" alt="" />
+              </div>
+              <div>
+                <img src="./img/biotechne+logo.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- About Us Section -->
-      <section>
-        <div>
-          <div>About us</div>
-          <div>
-            <div>Lorem Ipsum is simply dummy text dummy text</div>
-            <div>
-              <button>
+      <section class="mx-8 md:mx-16">
+        <div class="flex flex-col space-y-6">
+          <div class="text-accent font-tertiary">About us</div>
+          <div class="md:flex justify-between">
+            <div class="md:w-3/5 text-primary font-accent font-bold">
+              Lorem Ipsum is simply dummy text dummy text
+            </div>
+            <div class="font-primary text-tertiary mt-2">
+              <button class="bg-accent px-4 py-2 rounded-md">
                 Read More
                 <i class="fas fa-long-arrow-alt-right"></i>
               </button>
             </div>
           </div>
           <div>
-            <img src="./img/Rectangle 5.png" alt="" />
+            <img src="./img/Rectangle-5.png" alt="" />
           </div>
         </div>
       </section>
 
       <!-- What we do -->
-      <section>
-        <div>
-          <div>What we do</div>
-          <div>
-            <div>Perfect Solution for Your Business</div>
-            <div>
+      <section class="border-b border-gray-300">
+        <div class="flex flex-col mx-8 md:mx-16 mb-7">
+          <div class="font-tertiary text-accent mb-4">What we do</div>
+          <div
+            class="md:flex space-y-4 md:space-y-0 items-center justify-between"
+          >
+            <div class="md:w-2/5 text-primary font-sub font-bold">
+              Perfect Solution for Your Business
+            </div>
+            <div class="mr-7 md:w-2/5 font-secondary text-what-sec">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever
             </div>
           </div>
-          <div>
-            <div>
+          <div
+            class="
+              flex flex-col
+              md:flex-row
+              space-x-0 space-y-6
+              md:space-x-6 md:space-y-0
+              mt-8
+              md:mt-24
+            "
+          >
+            <div class="flex flex-col space-y-5">
               <div>
-                <img src="./img/stats.png" alt="" />
+                <button class="p-4 bg-primary rounded">
+                  <img src="./img/stats.png" alt="" />
+                </button>
               </div>
-              <div>Grow Your Business</div>
-              <div>we always to help your company to grow with us.</div>
-              <div>
-                Learn more
-                <i class="fas fa-long-arrow-alt-right"></i>
+              <div class="text-what-head font-what-primary font-bold">
+                Grow Your Business
+              </div>
+              <div class="font-secondary text-what-sec">
+                we always to help your company to grow with us.
+              </div>
+              <div class="text-primary font-job">
+                <button class="bg-white px-4 py-2 rounded-full">
+                  Learn more
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </button>
               </div>
             </div>
-            <div>
+            <div class="flex flex-col space-y-5">
               <div>
-                <img src="./img/discount.png" alt="" />
+                <button class="p-4 bg-accent rounded">
+                  <img src="./img/discount.png" alt="" />
+                </button>
               </div>
-              <div>Drive more sales</div>
-              <div>
+              <div class="text-what-head font-what-primary font-bold">
+                Drive more sales
+              </div>
+              <div class="font-secondary text-what-sec">
                 Every company that we handle we always drive more sales.
               </div>
-              <div>
-                Learn more
-                <i class="fas fa-long-arrow-alt-right"></i>
+              <div class="text-white font-job">
+                <button class="bg-learn px-4 py-2 rounded-full">
+                  Learn more
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </button>
               </div>
             </div>
-            <div>
+            <div class="flex flex-col space-y-5">
               <div>
-                <img src="./img/rating.png" alt="" />
+                <button class="p-4 bg-secondary rounded">
+                  <img src="./img/rating.png" alt="" />
+                </button>
               </div>
-              <div>Handle by Experts</div>
-              <div>You don’t need to worry, We are experts.</div>
-              <div>
-                Learn more
-                <i class="fas fa-long-arrow-alt-right"></i>
+              <div class="text-what-head font-what-primary font-bold">
+                Handle by Experts
+              </div>
+              <div class="font-secondary text-what-sec">
+                You don’t need to worry, We are experts.
+              </div>
+              <div class="text-primary font-job">
+                <button class="bg-white px-4 py-2 rounded-full">
+                  Learn more
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -157,36 +285,37 @@
       </section>
 
       <!-- Our Works -->
-      <section>
-        <div>
-          <div>Our Works</div>
-          <div>
-            <div>Here are a few of our recent works</div>
-            <div>
-              <button>
+      <section class="mx-8 md:mx-16">
+        <div class="flex flex-col space-y-6">
+          <div class="text-accent font-tertiary">Our Works</div>
+          <div class="md:flex justify-between">
+            <div class="md:w-1/4 text-primary font-accent font-bold">
+              Here are a few of our recent works
+            </div>
+            <div class="font-primary text-tertiary mt-2">
+              <button class="bg-accent px-4 py-2 rounded-md">
                 View All
                 <i class="fas fa-long-arrow-alt-right"></i>
               </button>
             </div>
           </div>
-          <div>
-            <div>
-              <div>
-                <img src="./img/Rectangle-11.png" alt="" />
-              </div>
-              <div>Food Delivery App</div>
-              <div>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever
-              </div>
-            </div>
+          <div
+            class="
+              flex flex-col
+              space-y-5
+              md:grid
+              grid-cols-2 grid-flow-row-dense
+              gap-4
+            "
+          >
             <div>
               <div>
                 <img src="./img/Rectangle-12.png" alt="" />
               </div>
-              <div>E-Pay App</div>
-              <div>
+              <div class="font-accent text-primary font-semibold">
+                E-Pay App
+              </div>
+              <div class="font-primary text-secondary">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever
@@ -196,8 +325,23 @@
               <div>
                 <img src="./img/Rectangle-14.png" alt="" />
               </div>
-              <div>Podcast App</div>
+              <div class="font-accent text-primary font-semibold">
+                Podcast App
+              </div>
+              <div class="font-primary text-secondary">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever
+              </div>
+            </div>
+            <div>
               <div>
+                <img src="./img/Rectangle-11.png" alt="" />
+              </div>
+              <div class="font-accent text-primary font-semibold">
+                Food Delivery App
+              </div>
+              <div class="font-primary text-secondary">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever
@@ -207,8 +351,10 @@
               <div>
                 <img src="./img/Rectangle-13.png" alt="" />
               </div>
-              <div>Service Provider App</div>
-              <div>
+              <div class="font-accent text-primary font-semibold">
+                Service Provider App
+              </div>
+              <div class="font-primary text-secondary">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever
@@ -219,28 +365,342 @@
       </section>
 
       <!-- Testimonials -->
-      <section>
+      <section class="bg-testimonial">
+        <div class="mx-8 md:mx-16 my-10">
+          <div class="text-accent font-tertiary">Testimonials</div>
+          <div class="text-primary font-accent font-bold">
+            What Customers Say About Us
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <div>"</div>
+                  <div>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <img src="./img/Ellipse-6.png" alt="" />
+                      </div>
+                      <div>
+                        <div>John James</div>
+                        <div>Ceo, card center</div>
+                      </div>
+                    </div>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div>"</div>
+                  <div>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <img src="./img/Ellipse-7.png" alt="" />
+                      </div>
+                      <div>
+                        <div>James Fernando</div>
+                        <div>Hr Manager</div>
+                      </div>
+                    </div>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div>"</div>
+                  <div>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <img src="./img/Ellipse-8.png" alt="" />
+                      </div>
+                      <div>
+                        <div>Jane Doe</div>
+                        <div>Product Manager</div>
+                      </div>
+                    </div>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div>"</div>
+                  <div>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <img src="./img/Ellipse-6.png" alt="" />
+                      </div>
+                      <div>
+                        <div>John James</div>
+                        <div>Ceo, card center</div>
+                      </div>
+                    </div>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div>"</div>
+                  <div>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <img src="./img/Ellipse-7.png" alt="" />
+                      </div>
+                      <div>
+                        <div>James Fernando</div>
+                        <div>Hr Manager</div>
+                      </div>
+                    </div>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div>"</div>
+                  <div>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <img src="./img/Ellipse-8.png" alt="" />
+                      </div>
+                      <div>
+                        <div>Jane Doe</div>
+                        <div>Product Manager</div>
+                      </div>
+                    </div>
+                    <div>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section class="mx-8 md:mx-16">
+        <div>News</div>
+        <div>Our Latest News</div>
         <!-- Slider main container -->
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper mb-14 md:mb-24">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">
+              <div>
+                <div>
+                  <img src="./img/Rectangle-10.png" alt="" />
+                </div>
+                <div>e- commerce</div>
+                <div>Lorem Ipsum is simply dummy text of the printing</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div>
+                  <img src="./img/Rectangle-6.png" alt="" />
+                </div>
+                <div>e- commerce</div>
+                <div>Lorem Ipsum is simply dummy text of the printing</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div>
+                  <img src="./img/Rectangle-18.png" alt="" />
+                </div>
+                <div>e- commerce</div>
+                <div>Lorem Ipsum is simply dummy text of the printing</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div>
+                  <img src="./img/Rectangle-19.png" alt="" />
+                </div>
+                <div>e- commerce</div>
+                <div>Lorem Ipsum is simply dummy text of the printing</div>
+              </div>
+            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
       </section>
     </main>
+
+    <footer class="bg-footer text-white font-primary">
+      <div class="mx-8 md:mx-16 pt-14 md:pt-24">
+        <div
+          class="
+            flex flex-col
+            lg:grid
+            grid-cols-9
+            gap-4
+          "
+        >
+          <div class="col-span-3">
+            <div class="font-tertiary font-bold mb-2">VendorCrest</div>
+            <div>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+            <div class="mt-4">@vendorcrest digital agency</div>
+          </div>
+          <div class="col-span-1">
+            <div class="font-bold font-news-desc mb-2">About us</div>
+            <div>VendorCrest</div>
+            <div>Portfolios</div>
+            <div>Careers</div>
+            <div>Contact Us</div>
+          </div>
+          <div class="col-span-3">
+            <div class="font-bold font-news-desc mb-2">Contact Us</div>
+            <div>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+            <div class="mt-6">+2349054285961</div>
+          </div>
+          <div class="flex flex-row space-x-4 items-end col-span-2">
+            <div
+              class="
+                py-2
+                px-3
+                mt-4
+                md:mt-0
+                md:w-auto
+                flex
+                items-center
+                rounded-full
+                icon-shadow
+                bg-white
+                text-icons
+              "
+            >
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div
+              class="
+                py-2
+                flex
+                items-center
+                px-3
+                rounded-full
+                icon-shadow
+                bg-white
+                text-icons
+              "
+            >
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div
+              class="
+                py-2
+                flex
+                items-center
+                px-3
+                rounded-full
+                icon-shadow
+                bg-white
+                text-icons
+              "
+            >
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div
+              class="
+                py-2
+                flex
+                items-center
+                px-3
+                rounded-full
+                icon-shadow
+                bg-white
+                text-icons
+              "
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+        <div class="justify-center flex space-x-1 font-job py-8">
+          <div>&COPY;2021 VendorCrest</div>
+          <div>VC. ALL RIGHTS RESERVED.</div>
+        </div>
+      </div>
+    </footer>
   </body>
-  <script
-    src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
-  ></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
 </html>
